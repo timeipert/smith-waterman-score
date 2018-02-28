@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "smith-waterman-score",
+        "scope": null,
+        "escapedName": "smith-waterman-score",
+        "name": "smith-waterman-score",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/timeipert/Documents/Studium/Programmierung/Libs/SmithWatermanScore"
+    ]
+  ],
+  "_from": "smith-waterman-score@latest",
+  "_id": "smith-waterman-score@1.0.1",
+  "_inCache": true,
+  "_location": "/smith-waterman-score",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/smith-waterman-score-1.0.1.tgz_1508239694526_0.9167566921096295"
+  },
+  "_npmUser": {
+    "name": "timeipert",
+    "email": "tim.eipert@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "smith-waterman-score",
+    "scope": null,
+    "escapedName": "smith-waterman-score",
+    "name": "smith-waterman-score",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/smith-waterman-score/-/smith-waterman-score-1.0.1.tgz",
+  "_shasum": "73b573017767698978ee7e06f5b261fa85b2477d",
+  "_shrinkwrap": null,
+  "_spec": "smith-waterman-score",
+  "_where": "/Users/timeipert/Documents/Studium/Programmierung/Libs/SmithWatermanScore",
+  "author": {
+    "name": "Tim Eipert"
+  },
+  "dependencies": {},
+  "description": "Returns a score matching of two strings by using the smith-waterman-algorithm.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "73b573017767698978ee7e06f5b261fa85b2477d",
+    "tarball": "https://registry.npmjs.org/smith-waterman-score/-/smith-waterman-score-1.0.1.tgz"
+  },
+  "license": "AGPL",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "timeipert",
+      "email": "tim.eipert@gmail.com"
+    }
+  ],
+  "name": "smith-waterman-score",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.4"
+}
