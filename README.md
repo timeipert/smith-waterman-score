@@ -10,15 +10,20 @@ Then just call it like this:
 
 ```
 const smith_waterman = require('smith-waterman-score')
-const result = smith_waterman("*uddudrud", "*uduudrur", {"match": 1, "mismatch": -1, "gap": -1})
+const result = smith_waterman('*uddudrud', '*uduudrur', {'match': 1, 'mismatch': -1, 'gap': -1})
 ```
 
 It will return you an object with two relevant informations:
 
 ```
-result.peak
+console.log(result.peak)
+
 // { 'cell': [8,8], 'value': 6 }
-result.trace
+
+console.log(result.trace)
+
 //  [
-//    {patChar: "u", patIndex: 8, seqChar: "u", seqIndex: 8}
-//    .... ]
+//    {patChar: 'u', patIndex: 8, seqChar: 'u', seqIndex: 8}
+//    ...
+//  ]
+```
