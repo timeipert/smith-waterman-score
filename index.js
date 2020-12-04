@@ -7,20 +7,12 @@ const tracebackDirectionHash = ['d', 'u', 'l']
 
 const F = (i, j, ma, costs) => {
       let tracebackPoint = ''
-      // console.log(ma.matches, i, j)
-      // console.log(ma.sequence[i - 1], ma.pattern[j - 1])
-
       let matches = [
             +ma.matches[j - 1][i - 1] + evaluation(ma.sequence[i - 1], ma.pattern[j - 1], costs),
             +ma.matches[j - 1][i] + costs.gap,
             +ma.matches[j][i - 1] + costs.gap
       ]
-
-      // Hole den besten Match
       let bestMatch = Math.max(...matches)
-
-      // Falls es mehrere gleichwertige Matches gibt und der diagonale dabei ist, wähle diesen aus, sonst wähle den
-      // mit dem besten Match
       if (matches.filter(e => bestMatch === e).length > 1 && matches[0] === bestMatch && bestMatch > 0) tracebackPoint = tracebackDirectionHash[0]       // Diagonal
       else if (matches.filter(e => bestMatch === e).length == 1 && bestMatch > 0) tracebackPoint = tracebackDirectionHash[matches.indexOf(bestMatch)]
       else if (bestMatch <= 0) {
